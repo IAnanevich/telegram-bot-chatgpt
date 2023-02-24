@@ -31,7 +31,7 @@ async def start(message):
 
 
 @bot.message_handler(commands=['info'])
-async def help_me(message):
+async def info(message):
     markup = types.InlineKeyboardMarkup()
     btn1 = types.InlineKeyboardButton(text='Info', url='https://en.wikipedia.org/wiki/ChatGPT')
     markup.add(btn1)
